@@ -1,0 +1,442 @@
+*{
+    margin:0;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border:content-box;
+}
+/* .header{
+    
+} */
+.head{
+    background-color: yellow;
+    padding: 50px;
+    width:50%;
+    height: 200px;
+    font-size: xx-large;
+    font-weight: 800;
+    
+    
+}
+.head-1{
+    font-size:30px;
+    font-weight: 500;
+}
+#head-2{
+    font-size: small;
+    border-left:2px solid black;
+    padding-left: 15px;
+}
+.img{
+    background-image: url(Main.jpg);
+    height:300px;
+    width:50%;
+    float:right;
+    background-repeat:no-repeat;
+    background-size:cover;
+}
+.main{
+    background-color: black;
+    height: 180px;
+    width: 100%;
+}
+.main-1{
+    color:yellow;
+    margin-left: 50px;
+    padding-top: 40px;
+    float: left;
+    font-weight: 600;
+}
+.main-2{
+    color: aliceblue;
+}
+.main-3{
+    color:yellow;
+    float:right;    
+    padding-top: 40px;
+    margin-right: 145px;
+    font-weight: 600;
+    
+}
+.main-4{
+    color:aliceblue;
+    float: right;
+}
+.abc{
+    background-color:white;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.ab{
+    font-weight: 500;
+    margin-top: -40px;
+    margin-left: 50px;
+}
+.abc-1{
+    padding:50px;
+    font-weight: 600;
+    
+    
+}
+.abc-2{
+    font-size: 15px;
+    font-weight: 300;
+    margin-left: 185px;
+    margin-top: -18px;
+}
+.char{
+    font-weight: 600;
+    margin-left: 50px;
+
+}
+.seek{
+    font-weight: 300;
+    margin-left: 180px;
+    margin-top: -19px;
+    
+}
+.brand{
+    margin-left: 50px;
+}
+.pain{
+    font-weight: 800;
+    margin-left: 50px;
+
+}
+.limit{
+    font-weight: 300;
+    margin-left: 148px;
+    margin-top: -18px;
+
+}
+.and{
+    margin-left: 50px;
+}
+.abc-3{
+    font-weight: 800;
+    margin-left: 50px;
+    margin-top: 40px;
+}
+.img-1{
+    background-image: url(Hic.png);
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+}
+.abc-4{
+    margin-left: 140px;
+    margin-top: -55px;
+}
+.img-2{
+    background-image: url(Hic.png);
+    height: 80px;
+    width: 80px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-left: 50px;
+    margin-top: 20px;
+
+}
+.abc-5{
+    margin-left: 140px;
+    margin-top: -60px;
+
+}
+
+
+.value{
+    margin-left: 200px;
+    float:right;
+    margin-right: 400px;
+    margin-top: -340px;
+    font-weight: 800;
+}
+.elude{
+    margin-left: 240px;
+    float:right;
+    margin-right: 508px;
+    margin-top: -310px;
+    font-weight: 800;
+
+}
+.stand{
+    margin-left: 150px;
+    float:right;
+    margin-right: 75px;
+    margin-top: -310px;
+    font-weight: 300;
+}
+.cus{
+    margin-left: 150px;
+    float:right;
+    margin-right: 88px;
+    margin-top: -290px;
+    font-weight: 300;
+}
+.br{
+    margin-left: 150px;
+    float:right;
+    margin-right: 117px;
+    margin-top: -270px;
+    font-weight: 300;
+}
+.po{
+    margin-left: 150px;
+    float:right;
+    margin-right: 461px;
+    margin-top: -250px;
+    font-weight: 300;   
+}
+.com{
+    font-weight: 800;
+
+    float:right;
+    margin-right: 360px;
+    margin-top: -190px;
+}
+.per{
+    font-weight: 800;
+    
+    float:right;
+    margin-right: 345px;
+    margin-top: -160px;
+
+}
+.tai{
+    font-weight: 300;
+    
+    float:right;
+    margin-right: 125px;
+    margin-top: -160px;
+
+}
+.with{
+    font-weight: 300;
+    float:right;
+    margin-right: 290px;
+    margin-top: -140px;
+    
+}
+.expert{
+    font-weight: 800;
+    
+    float:right;
+    margin-right: 325px;
+    margin-top: -120px;
+
+}
+.strong{
+    font-weight: 300;
+    
+    float:right;
+    margin-right: 120px;
+    margin-top: -120px;
+}
+.sup{
+    font-weight: 300;
+    
+    float:right;
+    margin-right:260px;
+    margin-top: -100px;
+}
+.post{
+    font-weight: 800;
+    
+    float:right;
+    margin-right:385px;
+    margin-top: -80px;
+}
+.comp{
+    font-weight: 300;
+    
+    float:right;
+    margin-right:105px;
+    margin-top: -80px;
+}
+.event{
+    font-weight: 300;
+    
+    float:right;
+    margin-right:220px;
+    margin-top: -60px;
+
+}
+.footer{
+ background-color: lightgrey;
+ height:480px;
+ width:100%;
+}
+.rev{
+    font-weight: 800;
+    padding-top: 60px;
+    margin-left: 40px;
+}
+.event-1{
+    font-weight: 800;
+    padding-top: 10px;
+    margin-left: 40px;
+}
+.pric{
+    font-weight: 300;
+    margin-top: -20px;
+    margin-left: 355px;
+}
+.scale{
+    font-weight: 300;
+    margin-left: 39px;
+
+}
+.add{
+    font-weight: 800;
+    padding-top: 5px;
+    margin-left: 40px;
+
+}
+.spon{
+    font-weight: 300;
+    margin-top: -20px;
+    margin-left: 275px;
+}
+.rel{
+    font-weight: 300;
+    margin-left: 39px;
+}
+.core{
+    font-weight: 800;
+    padding-top: 20px;
+    margin-left: 40px;
+}
+.img-3{
+    background-image: url(round1.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-left: 35px;
+    margin-top: 10px;
+}
+.john{
+    font-weight: 600;
+    margin-left: 130px;
+    margin-top: -60px;
+
+}
+.fou{
+    font-weight: 300;
+    margin-left: 130px;
+    margin-top: 5px;
+    
+}
+.img-4{
+    background-image: url(round2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-left: 35px;
+    margin-top: 30px;
+
+}
+.jane{
+    font-weight: 600;
+    margin-left: 130px;
+    margin-top: -60px;
+
+}
+.die{
+    font-weight: 300;
+    margin-left: 130px;
+    margin-top: 5px;
+}
+.img-5{
+    background-image: url(round3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-left: 430px;
+    margin-top: -160px;
+}
+.michale{
+    font-weight: 600;
+    margin-left: 530px;
+    margin-top: -60px;
+
+}
+.Head{
+    font-weight: 300;
+    margin-left: 530px;
+    margin-top: 5px;
+}
+.img-6{
+    background-image: url(round4.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80px;
+    width: 80px;
+    margin-left: 430px;
+    margin-top: 30px;
+}
+.sarah{
+    font-weight: 600;
+    margin-left: 530px;
+    margin-top: -60px;
+}
+.cre{
+    font-weight: 300;
+    margin-left: 530px;
+    margin-top: 5px;
+}
+.fin{
+    font-weight: 800;
+    margin-left:750px;
+    margin-top: -205px;
+}
+.img-7{
+    background-image: url(chart.png);
+    background-repeat: no-repeat;
+    background-size:contain;
+    background-position: center;
+    height: 180px;
+    /* display: block; */
+    width: 500px;
+    margin-left: 750px;
+    margin-top: 20px;
+
+}
+.footer-1{
+    background-color: grey;
+    height: 130px;
+    width: 100%;
+}
+.we{
+    font-weight: 400;
+    padding-top: 40px;
+    margin-left: 40px;
+    color: white;
+
+}
+.www{
+    font-weight: 400;
+    float: right;
+    color: white;
+    margin-top: -60px;
+    margin-right: 40px;
+
+}
+.supp{
+    font-weight: 400;
+    float: right;
+    color: white;
+    margin-top: -40px;
+    margin-right: 40px;
+
+}
+.last{
+    font-weight: 400;
+    float: right;
+    color: white;
+    margin-top: -20px;
+    margin-right: 40px;
+}
