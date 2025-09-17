@@ -1,0 +1,321 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Bookstore Cards</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
+      padding: 20px;
+    }
+
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #ffffff;
+      color: #2d3436;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    .logo {
+      font-size: 26px;
+      font-weight: bold;
+      color: #0984e3;
+    }
+
+    .nav-links {
+      list-style: none;
+      display: flex;
+      gap: 35px;
+    }
+
+    .nav-links li a {
+      text-decoration: none;
+      color: #2d3436;
+      font-size: 16px;
+      font-weight: 500;
+      position: relative;
+      padding: 5px 0;
+      transition: 0.3s;
+    }
+
+    .nav-links li a::after {
+      content: "";
+      position: absolute;
+      width: 0%;
+      height: 2px;
+      bottom: 0;
+      left: 0;
+      background: #0984e3;
+      transition: width 0.3s ease;
+    }
+
+    .nav-links li a:hover::after {
+      width: 100%;
+    }
+
+    .nav-links li a:hover {
+      color: #0984e3;
+      transform: translateY(-2px);
+    }
+
+    .buy-btn {
+      padding: 10px 22px;
+      background: #00b894;
+      color: white;
+      font-size: 15px;
+      font-weight: bold;
+      border: none;
+      border-radius: 25px;
+      cursor: pointer;
+      transition: 0.3s ease-in-out;
+      text-decoration: none;
+    }
+
+    .buy-btn:hover {
+      background: #019875;
+      transform: scale(1.05);
+    }
+
+    h1 {
+      text-align: center;
+      color: #2d3436;
+      margin: 40px 0 30px 0;
+    }
+
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 300px;
+      margin: 0 auto;
+    }
+
+    .book-card {
+      background: #ffffff;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: row;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+      width: 100%;
+    }
+
+    .book-card:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .book-title {
+      font-size: 20px;
+      font-weight: 600;
+      color: #2d3436;
+    }
+
+    .book-author {
+      font-size: 14px;
+      color: #636e72;
+    }
+
+    .book-category {
+      font-size: 13px;
+      color: #0984e3;
+      font-weight: 500;
+    }
+
+    .book-price {
+      font-size: 16px;
+      font-weight: bold;
+      color: #00b894;
+    }
+
+    .buy-btn-small {
+      padding: 10px 15px;
+      background: #0984e3;
+      color: white;
+      text-align: center;
+      border-radius: 6px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.3s, transform 0.2s;
+      width: fit-content;
+    }
+
+    .buy-btn-small:hover {
+      background: #0652DD;
+      transform: scale(1.05);
+    }
+
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">📚 BookNest</div>
+    <ul class="nav-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">New Arrivals</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="/index" class="buy-btn">Buy Book</a>
+  </nav>
+
+  <h1>📚 BookNest Collection</h1>
+
+  <div class="card-container">
+    <% data.map(book => { %>
+      <div class="book-card">
+        <div class="book-title"><%= book.title %></div>
+        <div class="book-author">By: <%= book.author %></div>
+        <div class="book-category">Category: <%= book.category %></div>
+        <div class="book-price">$<%= book.price %></div>
+        <a href="" class="buy-btn-small">Buy Now</a>
+      </div>
+    <% }) %>
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BookNest Collection</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; background: #f5f6fa; padding: 20px; }
+
+    /* Navbar */
+    .navbar {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      background: #fff;
+      color: #2d3436;
+      box-shadow: 0 3px 6px rgba(0,0,0,0.1);
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    .logo { font-size: 26px; font-weight: bold; color: #0984e3; }
+    .nav-links { list-style: none; display: flex; gap: 35px; }
+    .nav-links li a { text-decoration: none; color: #2d3436; font-size: 16px; font-weight: 500; position: relative; padding: 5px 0; transition: 0.3s; }
+    .nav-links li a::after { content:""; position:absolute; width:0%; height:2px; bottom:0; left:0; background:#0984e3; transition: width 0.3s; }
+    .nav-links li a:hover::after { width:100%; }
+    .nav-links li a:hover { color:#0984e3; transform: translateY(-2px); }
+    .buy-btn { padding: 10px 22px; background: #00b894; color:white; font-weight:bold; border:none; border-radius:25px; cursor:pointer; text-decoration:none; transition:0.3s; }
+    .buy-btn:hover { background:#019875; transform:scale(1.05); }
+
+    h1 { text-align: center; color: #2d3436; margin: 40px 0 30px; }
+
+    /* Card Container */
+    .card-container {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      max-width: 1200px;
+      margin: 0 auto;
+      justify-content: center;
+    }
+
+    /* Book Card */
+    .book-card {
+      flex: 1 1 220px;
+      max-width: 250px;
+      background: #fff;
+      border-radius: 10px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    .book-card:hover { transform: translateY(-3px); box-shadow: 0 8px 20px rgba(0,0,0,0.15); }
+
+    .book-title { font-size: 18px; font-weight: 600; color: #2d3436; }
+    .book-author { font-size: 14px; color: #636e72; }
+    .book-category { font-size: 13px; color: #0984e3; font-weight: 500; }
+    .book-price { font-size: 16px; font-weight: bold; color: #00b894; }
+
+    /* Buttons inside card */
+    .card-btn {
+      padding: 8px 12px;
+      margin-right: 5px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      font-size: 14px;
+      color: white;
+      transition: 0.2s;
+    }
+    .book-quntity{
+      color:lightsalmon;
+      font-weight: 600;
+    }
+    .edit-btn { background: #0984e3; }
+    .edit-btn:hover { background: #0652DD; }
+    .delete-btn { background: #d63031; }
+    .delete-btn:hover { background: #b71c1c; }
+
+    .btn-container { display: flex; justify-content: flex-start; margin-top: 10px; gap: 5px; flex-wrap: wrap; }
+  </style>
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">📚 BookNest</div>
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="#">Categories</a></li>
+      <li><a href="#">Best Sellers</a></li>
+      <li><a href="#">New Arrivals</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <a href="/index" class="buy-btn">Add Book</a>
+  </nav>
+
+  <h1>📚 BookNest Collection</h1>
+
+  <div class="card-container">
+    <% if(data && data.length){ %>
+      <% data.forEach(book => { %>
+        <div class="book-card">
+          <div class="book-title"><%= book.title %></div>
+          <div class="book-author">By: <%= book.author %></div>
+          <div class="book-category">Category: <%= book.category %></div>
+          <div class="book-price">$<%= book.price %></div>
+          <div class="book-quntity">Quantity : <%= book.quantity %></div>
+          <div class="btn-container">
+            
+            <a href="/editData?id=<%=book.id%>"><button class="card-btn edit-btn" type="submit">Edit</button></a>
+            
+            <a href="/deleteData?id=<%=book.id%>"><button class="card-btn delete-btn" type="submit">Delete</button></a>
+          </div>
+        </div>
+      <% }) %>
+    <% } else { %>
+      <p>No books available</p>
+    <% } %>
+  </div>
+
+</body>
+</html>
+

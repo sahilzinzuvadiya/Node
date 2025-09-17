@@ -1,0 +1,187 @@
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Book</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f5f6fa;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      padding: 20px;
+    }
+
+    .form-container {
+      background: #fff;
+      padding: 30px 25px;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      width: 100%;
+      max-width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #0984e3;
+    }
+
+    input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #0984e3;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+
+    button:hover {
+      background: #0652DD;
+    }
+
+    a {
+      display: block;
+      text-align: center;
+      margin-top: 15px;
+      color: #0984e3;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <div class="form-container">
+    <h2>Edit Book</h2>
+    <form action="/updateData" method="POST">
+        <input type="text" name="id" value="<%=singleData.id%>" hidden>
+      <input type="text" name="title" placeholder="Book Title" value="<%= singleData.title %>" required>
+      <input type="text" name="author" placeholder="Author" value="<%= singleData.author %>" required>
+      <input type="text" name="category" placeholder="Category" value="<%= singleData.category %>" required>
+      <input type="number" name="price" placeholder="Price" value="<%= singleData.price %>" required>
+      <button type="submit">Update Book</button>
+    </form>
+    
+  </div>
+</body>
+</html> -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Edit Book</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+<style>
+  * { margin:0; padding:0; box-sizing:border-box; font-family: 'Inter', sans-serif; }
+  body { background: #f4f7fd; display:flex; justify-content:center; align-items:center; min-height:100vh; padding:20px; }
+  
+  .form-card {
+    background: #fff;
+    width: 100%;
+    max-width: 450px;
+    border-radius: 12px;
+    padding: 30px 25px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  .form-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 40px rgba(0,0,0,0.12);
+  }
+
+  h2 { text-align:center; color:#0984e3; font-weight:600; margin-bottom:25px; }
+
+  label {
+    display:block;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 6px;
+    color: #636e72;
+  }
+
+  input {
+    width:100%;
+    padding:12px 15px;
+    margin-bottom:20px;
+    border-radius:8px;
+    border:1px solid #dfe3ec;
+    font-size:16px;
+    transition: 0.3s;
+  }
+  input:focus { border-color: #0984e3; outline:none; box-shadow: 0 0 5px rgba(9,132,227,0.3); }
+
+  button {
+    width:100%;
+    padding:12px;
+    background:#0984e3;
+    color:#fff;
+    font-size:16px;
+    font-weight:600;
+    border:none;
+    border-radius:8px;
+    cursor:pointer;
+    transition: 0.3s;
+  }
+  button:hover { background:#0652DD; transform: scale(1.02); }
+
+  .cancel-link {
+    display:block;
+    text-align:center;
+    margin-top:15px;
+    font-weight:600;
+    color:#636e72;
+    text-decoration:none;
+    transition: 0.2s;
+  }
+  .cancel-link:hover { color:#0984e3; }
+</style>
+</head>
+<body>
+
+<div class="form-card">
+  <h2>Edit Book</h2>
+  <form action="/updateData" method="POST">
+      <input type="text" name="id" value="<%=singleData.id%>" hidden>
+    <label for="title">Book Title</label>
+    <input type="text" name="title" id="title" value="<%= singleData.title %>" required>
+
+    <label for="author">Author</label>
+    <input type="text" name="author" id="author" value="<%= singleData.author %>" required>
+
+    <label for="category">Category</label>
+    <input type="text" name="category" id="category" value="<%= singleData.category %>" required>
+
+    <label for="price">Price</label>
+    <input type="number" name="price" id="price" value="<%= singleData.price %>" required>
+
+    <label for="Quantity">Quantity</label>
+    <input type="number" name="quantity" id="quantity" value="<%= singleData.quantity %>" required>
+
+    <button type="submit">Update Book</button>
+  </form>
+  
+</div>
+
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Add Book | Bookstore</title>
+  <style>
+    body {
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      background: #f4f6f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+    }
+
+    .form-wrapper {
+      background: #fff;
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+      width: 400px;
+    }
+
+    h2 {
+      text-align: center;
+      margin-bottom: 25px;
+      color: #2c3e50;
+      font-size: 22px;
+      font-weight: 600;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 6px;
+      font-size: 14px;
+      font-weight: 500;
+      color: #34495e;
+    }
+
+    input, select {
+      display: block;
+      width: 100%;
+      padding: 12px;
+      margin-bottom: 18px;
+      border: 1px solid #ccd1d9;
+      border-radius: 6px;
+      font-size: 14px;
+      background: #fafafa;
+      transition: border 0.3s ease;
+      box-sizing: border-box;
+    }
+
+    input:focus, select:focus {
+      border-color: #2980b9;
+      outline: none;
+      background: #fff;
+    }
+
+    button {
+      display: block;
+      width: 100%;
+      padding: 14px;
+      border: none;
+      border-radius: 6px;
+      background: #2980b9;
+      color: #fff;
+      font-size: 15px;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background 0.3s ease, transform 0.2s ease;
+      box-sizing: border-box;
+    }
+
+    button:hover {
+      background: #1f6391;
+      transform: translateY(-1px);
+    }
+  </style>
+</head>
+<body>
+  <div class="form-wrapper">
+    <h2>📚 Add New Book</h2>
+    <form action="/addData" method="post">
+      <label for="title">Book Title</label>
+      <input type="text" id="title" name="title" required>
+
+      <label for="author">Author</label>
+      <input type="text" id="author" name="author" required>
+
+      <label for="price">Price ($)</label>
+      <input type="number" id="price" name="price" step="0.01" required>
+
+      <label for="category">Category</label>
+      <select id="category" name="category" required>
+        <option value="">-- Select Category --</option>
+        <option>Fiction</option>
+        <option>Non-Fiction</option>
+        <option>Science</option>
+        <option>History</option>
+        <option>Technology</option>
+        <option>Other</option>
+      </select>
+
+      <label for="quantity">Quantity</label>
+      <input type="number" id="quantity" name="quantity" min="1" required>
+
+      <button>Add Book</button>
+    </form>
+  </div>
+</body>
+</html>
