@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Movie Form</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #121212; /* Dark theme */
+      color: #fff;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+
+    .form-container {
+      background: #1e1e1e;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+      width: 400px;
+    }
+
+    .form-container h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffcc00;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #ddd;
+    }
+
+    /* Common input styles */
+    .form-field {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+     border: none;
+      border-radius: 6px;
+      background: #2a2a2a;
+      color: #fff;
+      font-size: 15px;
+      display: block;
+    }
+
+    .form-field:focus {
+      outline: none;
+      border: 2px solid #ffcc00;
+      background: #333;
+    }
+
+    textarea.form-field {
+      resize: none; /* prevent resizing */
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 12px;
+      background: linear-gradient(45deg, #ff4500, #ff6347);
+      border: none;
+      border-radius: 8px;
+      color: white;
+      font-size: 16px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.3s;
+    }
+
+    .submit-btn:hover {
+      transform: scale(1.05);
+      box-shadow: 0 0 15px #ff6347;
+    }
+     */
+  </style>
+</head>
+<body>
+
+  <div class="form-container">
+    <h2>🎬 Movie Form</h2>
+    <form action="/addData" method="post" enctype="multipart/form-data">
+    
+    <input style="margin-bottom: 20px;" type="file" name="image">
+      <label for="title">Movie Title</label>
+      <input type="text" id="title" name="title" class="form-field" placeholder="Enter movie title" required>
+
+      <label for="genre">Genre</label>
+      <select id="genre" name="genre" class="form-field" required>
+        <option value="">-- Select Genre --</option>
+        <option>Action</option>
+        <option>Drama</option>
+        <option>Comedy</option>
+        <option>Horror</option>
+        <option>Romance</option>
+        <option>Sci-Fi</option>
+      </select>
+
+      <label for="rating">Rating</label>
+      <input type="number" id="rating" name="rating" class="form-field" placeholder="Rate out of 10" min="1" max="10" required>
+
+      <label for="review">Review</label>
+      <textarea id="review" name="review" class="form-field" rows="4" placeholder="Write your review..."></textarea>
+
+      <button type="submit" class="submit-btn">Submit 🎟️</button>
+    </form>
+  </div>
+
+</body>
+</html>
+
